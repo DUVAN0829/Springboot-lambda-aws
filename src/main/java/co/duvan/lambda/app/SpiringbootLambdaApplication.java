@@ -56,4 +56,10 @@ public class SpiringbootLambdaApplication {
         };
     }
 
+    //* Receive and OBJECT and return an OBJECT
+    @Bean
+    public Function<Character, Character> receiveObject() {
+        return (param) -> param;
+    }
+
 }
